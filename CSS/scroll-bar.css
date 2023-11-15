@@ -1,0 +1,15 @@
+/* Estilo da barra de rolagem no geral */
+::-webkit-scrollbar {
+    width: 20px; /* Largura da barra de rolagem */
+}
+/* Estilo do "pulso" (a parte que você arrasta) */
+::-webkit-scrollbar-thumb {
+    /* background-color: rgb(41, 26, 61); */
+    background-color: rgb(236,110,49); /* Cor do "pulso" */
+    width: 5px;
+    border: 1px solid rgb(41, 26, 61);
+}
+/* Estilo da trilha (o fundo da barra de rolagem) */
+::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom ,rgb(188, 148, 139), rgb(41, 26, 61)); /* Cor da trilha */
+}

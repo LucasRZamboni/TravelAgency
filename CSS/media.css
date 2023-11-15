@@ -1,0 +1,171 @@
+@media screen and (max-width: 280px) {
+  header .header-right {
+    display: none;
+  }
+}
+@media screen and (max-width: 440px) {
+    section{
+        min-height: 100vh;
+    }
+  section.top {
+    background-image: url("/images/janela-aviao.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s;
+    background-attachment: fixed;
+  }
+  header .agency-name{
+    color: rgb(244, 138, 71);
+  }
+  header .header-right .icons {
+    display: block;
+    font-size: 25px;
+  }
+  header .header-right ul li a .icons {
+    padding: 5px;
+    display: flex;
+
+  }
+  header .header-right ul li a .icons:hover::after{
+    content: "";
+    position: absolute;
+    top: 65px;
+    background: rgb(41, 26, 61);
+    width: fit-content;
+    height: 30px;
+    padding: 0 5px 0 5px;
+    color: rgb(244, 138, 71);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: normal;
+    border-radius: 8px;
+  }
+  header .header-right ul li:nth-child(1) a .icons:hover::after{
+    content: "Places";
+  }
+  header .header-right ul li:nth-child(2) a .icons:hover::after{
+    content: "Plans";
+  }
+  header .header-right ul li:nth-child(3) a .icons:hover::after{
+    content: "Contact";
+  }
+  header .header-right ul li:nth-child(4) a .icons:hover::after{
+    content: "About";
+  }
+  header .header-right p {
+    display: none;
+  }
+  .to-places {
+    height: 50px;
+  }
+  .to-places a {
+    color: rgb(244, 138, 71);
+  }
+  .to-places a:hover {
+    color: rgb(41, 26, 61);
+  }
+  .title-image {
+    font-size: 50px;
+    text-align: center;
+  }
+  section.places {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  section.places .image-place {
+    width: 100%;
+    height: 50%;
+  }
+  section.places .text-place {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section.places .text-place p {
+    overflow-x: scroll;
+    display: none;
+  }
+  .places .text-place .form-check {
+    display: none;
+  }
+  section.places .text-place .carousel {
+    max-width: 85%;
+    max-height: 300px;
+    margin-bottom: 30px;
+  }
+  section.places .text-place.holanda .carousel,
+  section.places .text-place.peru .carousel,
+  section.places .text-place.brasil .carousel {
+    margin-bottom: 20px;
+  }
+  .places .text-place .carousel img {
+    width: 100%;
+    height: 250px;
+  }
+  footer{
+    height: 80vh;
+  }
+  footer .container-footer {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .container-footer .name,
+  footer .container-footer .socials{
+    width: 100%;
+    height: 33%;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .container-footer .plans{
+    flex-direction: column;
+    width: 100%;
+    height: 33%;
+  }
+  footer .container-footer .plans p{
+    margin: 0;
+  }
+  footer .container-footer .name span {
+    font-size: 35px;
+    color: rgb(41, 26, 61);
+  }
+  footer .container-footer .plans ul{
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+  }
+  footer .container-footer .plans ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(41, 26, 61);
+  }
+  footer .container-footer .socials a:hover {
+    color: rgb(41, 26, 61);
+  }
+}
+@media screen and (min-width: 440px) {
+  section.top,
+  footer {
+    background-image: url("/images/avião.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s;
+    background-attachment: fixed;
+  }
+  header .header-right .icons {
+    display: none;
+  }
+  header .header-right p {
+    display: block;
+  }
+}

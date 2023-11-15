@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency</title>
+
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/media.css" />
+    <link rel="stylesheet" href="CSS/scroll-bar.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="CSS/util/_bootswatch.scss" />
+    <link rel="stylesheet" href="CSS/util/_variables.scss" />
+    <link rel="stylesheet" href="CSS/util/bootstrap.css" />
+    <link rel="stylesheet" href="CSS/util/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container_principal">
+      <header>
+        <div class="header-left">
+          <h2 class="agency-name">
+            <span class="name1">Agency</span>
+            <span class="name2">Name</span>
+          </h2>
+        </div>
+        <div class="header-right">
+          <ul>
+            <li>
+              <a href="#place"
+                ><p>Places</p>
+                <span class="icons"
+                  ><ion-icon name="earth-outline"></ion-icon></span
+              ></a>
+            </li>
+            <li>
+              <a href="#plans"
+                ><p>Plans</p>
+                <span class="icons"
+                  ><ion-icon name="airplane-outline"></ion-icon></span
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><p>Contact</p>
+                <span class="icons"
+                  ><ion-icon name="mail-outline"></ion-icon></span
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><p>About</p>
+                <span class="icons"
+                  ><ion-icon name="happy-outline"></ion-icon></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <section class="top">
+        <h3 class="title-image frase">
+          "Travel is never a matter of money, but of courage."
+          <small>Paulo Coelho</small>
+        </h3>
+        <div class="to-places">
+          <a href="#place"><ion-icon name="arrow-down-outline"></ion-icon></a>
+        </div>
+      </section>
+      <section class="places" id="place">
+        <div class="image-place mexico" id="mexico">
+          <h3 class="title-image mexico">Kukulcán Temple</h3>
+        </div>
+        <div class="text-place mexico">
+          <p class="text-portuguese">
+            Entre as principais atrações do México está o
+            <strong>Templo de Kukulcán</strong>, localizado na cidade antiga de
+            Chichén Itzá, em Yucatán. Este monumento é considerado uma das
+            principais maravilhas do mundo, construídas pelos povos Maias e
+            Toltecas em formato de pirâmide com
+            <strong>30 metros de altura</strong>. Os turistas podem
+            <strong>escalá-lo</strong> (para quem tem fôlego) ou apenas
+            <strong>admirá-lo de longe</strong>, podendo apreciar sua beleza e
+            os mistérios ao redor da construção. Construído em honra ao
+            <strong>imperador Kukulcán</strong>, os degraus representam os 365
+            dias do ano e com enigmáticas astrológicas, onde cultuavam o sol.
+          </p>
+          <p class="text-english" style="display: none">
+            Among the main attractions of Mexico is the
+            <strong>Temple of Kukulcán</strong>, located in the ancient city of
+            Chichén Itzá, in Yucatán. This monument is considered one of the
+            main wonders of the world, built by the Mayan and Toltec peoples in
+            the form of a pyramid with a <strong>height of 30 meters</strong>.
+            Tourists can <strong>climb it</strong> (for those with the stamina)
+            or simply <strong>admire it from afar</strong>, appreciating its
+            beauty and the mysteries surrounding the construction. Built in
+            honor of <strong>Emperor Kukulcán</strong>, the steps represent the
+            365 days of the year and feature enigmatic astrological symbols,
+            where they worshiped the sun.
+          </p>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input toggle-language mexico"
+              type="checkbox"
+              id="flexSwitchCheckDefaultmexico"
+              onclick="toggleLanguage('mexico')"
+            />
+            <label class="form-check-label toggle-language-label" for="flexSwitchCheckDefaultmexico">English</label>
+          </div>
+          <div class="carousel">
+            <img src="images/mexico/mexico1.jpg" alt="Descrição da Imagem 1" />
+            <img src="images/mexico/mexico2.jpg" alt="Descrição da Imagem 2" />
+            <img src="images/mexico/mexico3.jpg" alt="Descrição da Imagem 3" />
+            <img src="images/mexico/mexico4.jpg" alt="Descrição da Imagem 4" />
+          </div>
+        </div>
+        <div class="to-places">
+          <a href="#holanda"><ion-icon name="arrow-down-outline"></ion-icon></a>
+        </div>
+      </section>
+      <section class="places" id="holanda">
+        <div class="text-place holanda">
+          <p class="text-portuguese">
+            Muitos conhecem <strong>Amsterdã</strong> como capital da Holanda e
+            seu idioma oficial é o holandês, uma língua gutural com algumas
+            raízes alemãs, francesas e inglesas. Os holandeses
+            <strong>são pessoas muito amáveis</strong> e educadas, não se
+            preocupe na hora de se comunicar com eles pois
+            <strong>todos falam inglês</strong> como segunda língua (se você tem
+            o inglês avançado ou fluente, fique tranquilo).
+          </p>
+          <p class="text-english" style="display: none">
+            Many know <strong>Amsterdam</strong> as the capital of the
+            Netherlands, and its official language is Dutch, a guttural language
+            with some German, French, and English roots. The Dutch
+            <strong>are very kind</strong> and polite people, so don't worry
+            when communicating with them because
+            <strong>everyone speaks English</strong> as a second language (if
+            you are proficient or fluent in English, feel at ease).
+          </p>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input toggle-language holanda"
+              type="checkbox"
+              id="flexSwitchCheckDefaultholanda"
+              onclick="toggleLanguage('holanda')"
+            />
+            <label class="form-check-label toggle-language-label" for="flexSwitchCheckDefaultholanda">English</label>
+          </div>
+          <div class="carousel">
+            <img
+              src="images/amsterdam/amsterdam1.jpg"
+              alt="Descrição da Imagem 1"
+            />
+            <img
+              src="images/amsterdam/amsterdam2.jpg"
+              alt="Descrição da Imagem 2"
+            />
+            <img
+              src="images/amsterdam/amsterdam3.jpg"
+              alt="Descrição da Imagem 3"
+            />
+            <img
+              src="images/amsterdam/amsterdam4.jpg"
+              alt="Descrição da Imagem 4"
+            />
+          </div>
+        </div>
+        <div class="image-place holanda">
+          <h3 class="title-image holanda">Amsterdam</h3>
+        </div>
+        <div class="to-places">
+          <a href="#frança"><ion-icon name="arrow-down-outline"></ion-icon></a>
+        </div>
+      </section>
+      <section class="places" id="frança">
+        <div class="image-place frança">
+          <h3 class="title-image frança">Eiffel Tower</h3>
+        </div>
+        <div class="text-place frança">
+            <p class="text-portuguese">
+              Sua parada na <strong>Torre Eiffel</strong> é obrigatória se você
+              for para a <strong>França</strong>! Com
+              <strong>324 metros de altura</strong>, a torre foi construída na
+              cidade de Paris em 1889 pelo arquiteto
+              <strong>Gustave Eiffel</strong>, onde recebe milhares de turistas
+              do mundo, aproximadamente 250 milhões de pessoas. O monumento é
+              uma das principais <strong>maravilhas arquitetônicas</strong>,
+              sendo o principal cartão-postal da cidade parisiense. Possui
+              <strong>três plataformas</strong> de observação, e a última (no
+              topo da torre) é possível ter uma
+              <strong>visão 360 graus</strong> da capital podendo chegar a mais
+              de 60 km de distância.
+            </p>
+            <p class="text-english" style="display: none">
+              Your stop at the <strong>Eiffel Tower</strong> is mandatory if you
+              go to <strong>France</strong>! With a height of
+              <strong>324 meters</strong>, the tower was built in the city of
+              Paris in 1889 by the architect <strong>Gustave Eiffel</strong>,
+              where it welcomes thousands of tourists from around the world,
+              approximately 250 million people. The monument is one of the main
+              <strong>architectural wonders</strong> and is the primary symbol
+              of the city of Paris. It has
+              <strong>three observation platforms</strong>, and the last one (at
+              the top of the tower) offers a <strong>360-degree view</strong> of
+              the capital, reaching more than 60 km away.
+            </p>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input toggle-language frança"
+                type="checkbox"
+                id="flexSwitchCheckDefaultfrança"
+                onclick="toggleLanguage('frança')"
+              />
+              <label class="form-check-label toggle-language-label" for="flexSwitchCheckDefaultfrança">English</label>
+            </div>
+          <div class="carousel">
+            <img
+              src="images/france/eiffel tower1.jpg"
+              alt="Descrição da Imagem 1"
+            />
+            <img
+              src="images/france/eiffel tower2.jpg"
+              alt="Descrição da Imagem 2"
+            />
+            <img
+              src="images/france/eiffel tower3.jpg"
+              alt="Descrição da Imagem 3"
+            />
+            <img
+              src="images/france/eiffel tower4.jpg"
+              alt="Descrição da Imagem 4"
+            />
+          </div>
+        </div>
+        <div class="to-places">
+          <a href="#peru"><ion-icon name="arrow-down-outline"></ion-icon></a>
+        </div>
+      </section>
+      <section class="places" id="peru">
+        <div class="text-place peru">
+          <p class="text-portuguese">
+            O Peru abriga uma das <strong>sete maravilhas</strong> do mundo, as
+            famosas ruínas de Machu Picchu, localizada no
+            <strong>Vale Sagrado dos Incas</strong>, em Cusco. É um lugar mágico
+            <strong>cheio de história</strong>, podendo recorrer dentro das suas
+            <strong>ruínas</strong> e visitar a
+            <strong>montanha sagrada</strong>, tirar fotos com lhamas e aprender
+            sobre as antigas culturas pré-hispânicas do local.
+          </p>
+          <p class="text-english" style="display: none">
+            Peru is home to one of the <strong>seven wonders</strong> of the
+            world, the famous ruins of Machu Picchu, located in the
+            <strong>Sacred Valley of the Incas</strong>, in Cusco. It is a
+            magical place <strong>full of history</strong>, where you can wander
+            through its <strong>ruins</strong>, visit the
+            <strong>sacred mountain</strong>, take photos with llamas, and learn
+            about the ancient pre-Hispanic cultures of the area.
+          </p>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input toggle-language peru"
+              type="checkbox"
+              id="flexSwitchCheckDefaultperu"
+              onclick="toggleLanguage('peru')"
+            />
+            <label class="form-check-label toggle-language-label" for="flexSwitchCheckDefaultperu">English</label>
+          </div>
+          <div class="carousel">
+            <img
+              src="images/peru/machu picchu1.jpg"
+              alt="Descrição da Imagem 1"
+            />
+            <img
+              src="images/peru/machu picchu2.jpg"
+              alt="Descrição da Imagem 2"
+            />
+            <img
+              src="images/peru/machu picchu3.jpg"
+              alt="Descrição da Imagem 3"
+            />
+            <img
+              src="images/peru/machu picchu4.jpg"
+              alt="Descrição da Imagem 4"
+            />
+          </div>
+        </div>
+        <div class="image-place peru">
+          <h3 class="title-image peru">Machu Picchu</h3>
+        </div>
+        <div class="to-places">
+          <a href="#brasil"><ion-icon name="arrow-down-outline"></ion-icon></a>
+        </div>
+      </section>
+      <section class="places" id="brasil">
+        <div class="image-place brasil">
+          <h3 class="title-image brasil">Cristo Redentor</h3>
+        </div>
+        <div class="text-place brasil">
+          <p class="text-portuguese">
+            O país é conhecido por sua natureza, fauna
+            e flora, e nelas podemos apreciar construções incríveis como o
+            <strong>Cristo Redentor</strong>, no Rio de Janeiro, localizado no
+            topo do <strong>morro do Corcovado</strong>. A estátua é considerada
+            uma das <strong>sete maravilhas</strong> do mundo e a mais famosa
+            <strong>Art Decó</strong>, recebendo turistas do mundo todo. Para
+            chegar <strong>até os pés</strong> do Cristo Redentor, você deverá
+            percorrer pelos <strong>220 degraus</strong> e apreciar a bela vista
+            da cidade. É possível chegar no monumento através de um
+            <strong>passeio de trem</strong> que atravessa também a
+            <strong>Mata Atlântica</strong> até chegar ao topo do Corcovado,
+            tudo isso <strong>durante vinte minutos</strong>.
+          </p>
+          <p class="text-english" style="display: none">
+            The country is known for its nature,
+            fauna, and flora, and in them, we can appreciate incredible
+            structures like the <strong>Christ the Redeemer</strong> in Rio de
+            Janeiro, located at the top of <strong>Corcovado Hill</strong>. The
+            statue is considered one of the <strong>seven wonders</strong> of
+            the world and the most famous <strong>Art Deco</strong>, attracting
+            tourists from around the world. To reach the
+            <strong>feet</strong> of Christ the Redeemer, you will need to climb
+            <strong>220 steps</strong> and enjoy the beautiful view of the city.
+            You can reach the monument by taking a
+            <strong>train ride</strong> that also crosses the
+            <strong>Atlantic Forest</strong> until reaching the top of
+            Corcovado, all of this <strong>in twenty minutes</strong>.
+          </p>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input toggle-language brasil"
+              type="checkbox"
+              id="flexSwitchCheckDefaultbrasil"
+              onclick="toggleLanguage('brasil')"
+            />
+            <label class="form-check-label toggle-language-label" for="flexSwitchCheckDefaultbrasil">English</label>
+          </div>
+          <div class="carousel">
+            <img src="images/brasil/cristo1.jpg" alt="Descrição da Imagem 1" />
+            <img src="images/brasil/cristo2.jpg" alt="Descrição da Imagem 2" />
+            <img src="images/brasil/cristo3.jpg" alt="Descrição da Imagem 3" />
+            <img src="images/brasil/cristo4.jpg" alt="Descrição da Imagem 4" />
+          </div>
+        </div>
+        <div class="to-places">
+          <a href="#footer"><ion-icon name="arrow-down-outline"></ion-icon></a>
+        </div>
+      </section>
+      <footer id="footer">
+        <a href="#top" class="to-top"
+          ><ion-icon name="arrow-up-outline"></ion-icon
+        ></a>
+        <div class="container-footer">
+          <div class="name">
+            <h2 class="agency-name">
+              <span class="name1">Agency</span>
+              <span class="name2">Name</span>
+            </h2>
+          </div>
+          <div class="plans" id="plans">
+            <p>Plans</p>
+            <ul>
+              <li>
+                <a href="#mexico">Kukulcán Temple</a>
+              </li>
+              <li>
+                <a href="#holanda">Amsterdam</a>
+              </li>
+              <li>
+                <a href="#frança">Eiffel Tower</a>
+              </li>
+              <li>
+                <a href="#peru">Machu Picchu</a>
+              </li>
+              <li>
+                <a href="#brasil">Cristo Redentor</a>
+              </li>
+            </ul>
+          </div>
+          <div class="socials">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/translation.js"></script>
+  </body>
+</html>

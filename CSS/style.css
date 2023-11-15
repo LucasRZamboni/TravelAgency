@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+:root {
+  --font1: "Titillium Web", sans-serif !important;
+  --font2: "Josefin Sans", sans-serif !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0 0 3px black;
+}
+.container_principal {
+  width: 100%;
+  height: 100%;
+}
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.616);
+  padding: 0 10px 0 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .header-left,
+header .header-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+h2.agency-name {
+  color: rgb(41, 26, 61);
+  padding: 2.5px 10px 2.5px 10px;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+h2.agency-name span {
+  font-family: var(--font1);
+  font-size: 25px;
+}
+h2.agency-name span.name2 {
+  font-size: 22px;
+}
+
+header .header-right {
+  justify-content: right;
+}
+header .header-right ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 4%;
+  align-items: center;
+  justify-content: right;
+  padding-right: 10%;
+  margin: 0;
+}
+header .header-right ul li {
+  list-style: none;
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header-right ul li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header-right ul li a p,
+header .header-right ul li a .icons {
+  color: rgb(41, 26, 61);
+  font-family: var(--font2);
+  background: rgb(188, 148, 139);
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: 0.3s;
+  margin: 0;
+}
+header .header-right ul li a p:hover,
+header .header-right ul li a .icons:hover {
+  transition: 0.3s;
+  background: rgb(41, 26, 61);
+  box-shadow: 0 0 5px rgb(244, 138, 71);
+  color: rgb(188, 148, 139);
+}
+header .header-right ul li a p:active,
+header .header-right ul li a .icons:active {
+  background: rgb(244, 138, 71);
+  transition: 0.3s;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.to-places {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.534);
+}
+.to-places a {
+  font-size: 50px;
+  text-decoration: none;
+  color: rgb(83, 52, 122);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  width: 100%;
+}
+.to-places a:hover {
+  color: rgb(244, 138, 71);
+}
+.places {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.places .image-place,
+.places .text-place {
+  width: 50%;
+  height: 100%;
+}
+.places .image-place {
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+  background-attachment: fixed;
+  border: 1px solid rgb(41, 26, 61);
+}
+.places .image-place.mexico {
+  background-image: url("/images/Templo_de_Kukulcán-mexico.jpg");
+}
+.places .image-place.holanda {
+  background-image: url("/images/amsterdã-holanda.jpg");
+  background-position: right;
+}
+.places .image-place.frança {
+  background-image: url("/images/torre-eiffel-frança.jpg");
+}
+.places .image-place.peru {
+  background-image: url("/images/Machu_Picchu-peru.jpg");
+  background-position: right;
+}
+.places .image-place.brasil {
+  background-image: url("/images/cristo.jpg");
+}
+.title-image {
+  font-family: var(--font1);
+  font-size: 70px;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(244, 138, 71);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.411);
+}
+.title-image.frase {
+  font-size: 60px;
+}
+.title-image.frase small {
+  font-family: var(--font1);
+  font-size: 20px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(41, 26, 61);
+}
+.title-image.frase {
+  background: none;
+  -webkit-text-stroke-color: rgb(41, 26, 61);
+  text-shadow: 0 0 3px rgba(244, 138, 71, 0.151);
+  /* width: 600px; */
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.places .text-place {
+  background: rgb(188, 148, 139);
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: var(--font2);
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  font-weight: 500;
+}
+
+.places .text-place p {
+  padding: 20px;
+  width: 70%;
+  text-align: justify;
+  font-size: 20px;
+  color: rgb(41, 26, 61);
+  text-shadow: 0 0 2px rgb(218, 171, 161);
+  box-shadow: 5px 5px 10px black, inset 1px 1px 3px rgba(255, 255, 255, 0.74);
+  border-radius: 8px;
+  background: rgb(244, 138, 71);
+  margin-top: 10px;
+  position: relative;
+}
+.places .text-place .form-check {
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  top: 40px;
+  right: 80px;
+}
+.places .text-place .form-check .form-check-label {
+  color: rgb(41, 26, 61);
+  font-size: 13px;
+}
+.places .text-place.holanda p,
+.places .text-place.peru p {
+  box-shadow: -5px 5px 10px black, inset -1px 1px 3px rgba(255, 255, 255, 0.74);
+}
+
+.places .text-place .carousel {
+  max-width: 70%;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+.places .text-place .carousel img {
+  width: 250px; /* Tamanho desejado para as imagens */
+  height: 350px;
+  border-radius: 20px;
+}
+footer {
+  width: 100%;
+  height: 200px;
+  box-shadow: 0 0 5px black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer a.to-top {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgb(188, 148, 139);
+  width: fit-content;
+  transition: 0.3s;
+  position: absolute;
+  right: 40px;
+  top: -25px;
+  box-shadow: 0 0 5px black;
+}
+footer a.to-top:hover {
+  transition: 0.3s;
+  background: rgb(41, 26, 61);
+  box-shadow: 0 0 5px rgb(244, 138, 71);
+  color: rgb(188, 148, 139);
+}
+footer .container-footer {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.418);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+footer .container-footer .name,
+footer .container-footer .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+}
+footer .container-footer .name span {
+  font-size: 35px;
+  color: rgb(244, 138, 71);
+}
+footer .container-footer .socials {
+  gap: 40px;
+}
+footer .container-footer .socials a {
+  color: rgb(244, 138, 71);
+  font-size: 45px;
+}
+footer .container-footer .socials a:hover {
+  color: rgb(188, 148, 139);
+}
+footer .container-footer .plans {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container-footer .plans p {
+  font-size: 23px;
+  color: rgb(244, 138, 71);
+  margin-right: 10px;
+}
+footer .container-footer .plans ul {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .container-footer .plans ul li {
+  list-style: none;
+}
+footer .container-footer .plans ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(188, 148, 139);
+}
+footer .container-footer .plans ul li a:hover {
+  color: rgb(244, 138, 71);
+}
