@@ -3,7 +3,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 540px) {
     section{
         min-height: 100vh;
     }
@@ -152,7 +152,7 @@
     color: rgb(41, 26, 61);
   }
 }
-@media screen and (min-width: 440px) {
+@media screen and (min-width: 540px) {
   section.top,
   footer {
     background-image: url("../images/avião.jpg");
