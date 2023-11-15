@@ -159,21 +159,21 @@ header .header-right ul li a .icons:active {
   border: 1px solid rgb(41, 26, 61);
 }
 .places .image-place.mexico {
-  background-image: url("/images/Templo_de_Kukulcán-mexico.jpg");
+  background-image: url("images/Templo_de_Kukulcán-mexico.jpg");
 }
 .places .image-place.holanda {
-  background-image: url("/images/amsterdã-holanda.jpg");
+  background-image: url("images/amsterdã-holanda.jpg");
   background-position: right;
 }
 .places .image-place.frança {
-  background-image: url("/images/torre-eiffel-frança.jpg");
+  background-image: url("images/torre-eiffel-frança.jpg");
 }
 .places .image-place.peru {
-  background-image: url("/images/Machu_Picchu-peru.jpg");
+  background-image: url("images/Machu_Picchu-peru.jpg");
   background-position: right;
 }
 .places .image-place.brasil {
-  background-image: url("/images/cristo.jpg");
+  background-image: url("images/cristo.jpg");
 }
 .title-image {
   font-family: var(--font1);
